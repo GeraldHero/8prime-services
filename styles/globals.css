@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* ++++++++++ background gradient ++++++++++ */
+.my-background-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 9%,
+    rgba(42, 42, 93, 1) 56%,
+    rgba(39, 38, 57, 1) 85%
+  );
 }
