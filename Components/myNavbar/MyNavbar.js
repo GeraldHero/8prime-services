@@ -79,7 +79,7 @@ const myNavbar = () => {
 
           <div className="grid items-center justify-end grid-cols-1 sm:flex">
             <ul
-              className={`absolute z-40 rounded w-[97%] py-6 font-serif text-center transition-all left-[1.5%] sm:left-auto duration-500 ease-in sm:py-0 sm:w-auto top-24 sm:top-auto bg-gradient-to-r from-[#000000] via-[#2a2a5d] to-[#272639] sm:from-transparent sm:mr-10 sm:space-x-5 sm:flex text-secondary ${
+              className={`absolute z-40 rounded w-[97%] py-6 font-serif text-center  left-[1.5%] sm:left-auto duration-500 ease-in sm:py-0 sm:w-auto top-24 sm:top-auto bg-gradient-to-r from-[#000000] via-[#242330] to-[#000000] sm:from-transparent sm:mr-10 sm:space-x-5 sm:flex text-light ${
                 !OnClose ? "opacity-0 sm:opacity-100" : "opacity-100"
               }`}
             >
@@ -90,7 +90,7 @@ const myNavbar = () => {
                     className="py-1 text-lg font-medium tracking-wide sm:py-0"
                   >
                     <Link href={`${pages.link}`}>
-                      <a className="p-2 rounded hover:bg-light hover:text-background">
+                      <a className="relative p-2 rounded after:absolute after:bg-white after:left-0 after:h-1 after:w-0 after:bottom-0 after:transition-all hover:text-white hover:after:w-full ">
                         {pages.pageName}
                       </a>
                     </Link>

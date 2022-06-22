@@ -17,6 +17,8 @@ module.exports = {
       tahiti: "#3ab7bf",
       logo: "#9C9290",
       yellow: "#FAD02C",
+      green: "#009688",
+      lightGreen: "#285e61",
     },
   },
   plugins: [],
