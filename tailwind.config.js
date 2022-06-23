@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      roboto: "'Roboto', sans-serif",
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -19,6 +25,7 @@ module.exports = {
       yellow: "#FAD02C",
       green: "#009688",
       lightGreen: "#285e61",
+      rose: colors.rose,
     },
   },
   plugins: [],

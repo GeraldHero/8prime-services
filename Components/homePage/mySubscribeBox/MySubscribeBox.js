@@ -9,7 +9,7 @@ export default function MySubscribeBox() {
               8<span className="font-mono text-primary">Prime</span>
             </span>
           </h1>
-          <p className="text-sm sm:text-xl">
+          <p className="text-sm sm:text-xl ">
             Get the latest posts delivered right to your inbox
           </p>
         </div>
@@ -21,10 +21,7 @@ export default function MySubscribeBox() {
                 type="email"
                 placeholder="Email"
               />
-              <button
-                className="flex-shrink-0 px-3 py-2 text-lg text-white rounded bg-green hover:bg-lightGreen "
-                type="button"
-              >
+              <button className="my-subscribe-btn" type="button">
                 Sign Up
               </button>
             </div>

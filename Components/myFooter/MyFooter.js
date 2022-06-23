@@ -5,17 +5,17 @@ export default function MyFooter() {
     <footer className="text-center lg:text-left my-background-gradient text-light">
       <div className="flex items-center justify-center p-6 border-b lg:justify-between border-light">
         <div className="hidden mr-12 lg:block">
-          <span className="pl-10">
+          <span className=" font-roboto">
             Get connected with us on social networks:
           </span>
         </div>
         <div className="flex justify-center">
           <a href="#" className="mr-6 text-light">
             <svg
-              ariaHidden="true"
+              ariahidden="true"
               focusable="false"
-              dataPrefix="fab"
-              dataIcon="facebook-f"
+              dataprfix="fab"
+              dataicon="facebook-f"
               className="w-2.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +30,10 @@ export default function MyFooter() {
 
           <a href="#!" className="mr-6 text-gray-600">
             <svg
-              ariaHidden="true"
+              ariahidden="true"
               focusable="false"
-              dataPrefix="fab"
-              dataIcon="google"
+              dataprfix="fab"
+              dataicon="google"
               className="w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -48,10 +48,10 @@ export default function MyFooter() {
 
           <a href="#!" className="mr-6 text-gray-600">
             <svg
-              ariaHidden="true"
+              ariahidden="true"
               focusable="false"
-              dataPrefix="fab"
-              dataIcon="linkedin-in"
+              dataprfix="fab"
+              dataicon="linkedin-in"
               className="w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -66,10 +66,10 @@ export default function MyFooter() {
 
           <a href="#!" className="mr-6 text-gray-600">
             <svg
-              ariaHidden="true"
+              ariahidden="true"
               focusable="false"
-              dataPrefix="fab"
-              dataIcon="github"
+              dataprfix="fab"
+              dataicon="github"
               className="w-4"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -84,10 +84,10 @@ export default function MyFooter() {
 
           <a href="#!" className="mr-6 text-gray-600">
             <svg
-              ariaHidden="true"
+              ariahidden="true"
               focusable="false"
-              dataPrefix="fab"
-              dataIcon="instagram"
+              dataprfix="fab"
+              dataicon="instagram"
               className="w-4"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +99,85 @@ export default function MyFooter() {
               ></path>
             </svg>
           </a>
+        </div>
+      </div>
+      <div className="flex grid w-full grid-cols-2 gap-5 p-12 mx-auto text-center md:text-center md:justify-center lg:max-w-screen-xl sm:grid-cols-2 md:grid-cols-4">
+        <div>
+          <h1 className="py-2 text-xl">COMPANY</h1>
+          <ul className="space-y-1">
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                About
+              </a>{" "}
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                {" "}
+                Contact
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                Photo
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                Subscibe
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="text-lg">
+          <h1 className="py-2 text-xl">HELP CENTER</h1>
+          <ul className="space-y-1">
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                About
+              </a>{" "}
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                {" "}
+                Contact
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                Photo
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-tahiti" href="#">
+                Subscibe
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="text-lg">
+          <h1 className="py-2 text-xl">FOLLOW US</h1>
+          <ul className="space-y-1">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div className="text-lg">
+          <h1 className="py-2 text-xl">LEGAL</h1>
+          <ul className="space-y-1">
+            <li>Privacy Policy</li>
+            <li>Licensing</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex items-center justify-center h-20 gap-1 text-lg text-center border-t">
+        Copyright &copy;
+        <div className="text-xl text-tahiti">
+          8
+          <span className="text-xl text-primary">
+            Prime Services 2022. All Rights Reserved.
+          </span>
         </div>
       </div>
     </footer>

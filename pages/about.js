@@ -1,3 +1,9 @@
+import MyAbout from "../Components/aboutPage/MyAbout";
+
 export default function about() {
-  return <div>about</div>;
+  return (
+    <section>
+      <MyAbout />
+    </section>
+  );
 }

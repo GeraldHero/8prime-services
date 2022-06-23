@@ -3,7 +3,7 @@ export default function MyServicesItems({ servicesData }) {
     return (
       <section
         key={idx}
-        className="  p-5 m-5 text-center bg-white rounded-md h-[300px] max-w-md shadow-xl"
+        className="max-w-md p-8 m-5 text-center bg-white rounded-md shadow-md bg-light"
       >
         <div
           className={`flex items-center justify-center w-20 h-20 p-5 m-auto text-center rounded-full sm:w-28 sm:h-28 ${service.iconColor}`}

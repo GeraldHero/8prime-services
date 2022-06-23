@@ -1,8 +1,8 @@
-import MyBackToBack from "../Components/myBackToBack/MyBackToBack";
-import MyBanner from "../Components/myBanner/MyBanner";
-import MyProjects from "../Components/myProjects/MyProjects";
-import MyServices from "../Components/myServices/MyServices";
-import MySubscribeBox from "../Components/mySubscribeBox/MySubscribeBox";
+import MyBackToBack from "../Components/homePage/myBackToBack/MyBackToBack";
+import MyBanner from "../Components/homePage/myBanner/MyBanner";
+import MyProjects from "../Components/homePage/myProjects/MyProjects";
+import MyServices from "../Components/homePage/myServices/MyServices";
+import MySubscribeBox from "../Components/homePage/mySubscribeBox/MySubscribeBox";
 
 export default function Home() {
   return (

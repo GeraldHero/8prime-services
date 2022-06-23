@@ -36,16 +36,14 @@ const servicesData = [
 
 export default function MyServices() {
   return (
-    <section className="my-20 max-w-screen-2xl 2xl:mx-auto">
-      <div className="py-4 rounded-tl-full rounded-br-full sm:px-2 my-background-gradient ">
-        <h2 className="p-4 pl-12 my-10 font-mono font-semibold bg-white rounded w-80 sm:w-96 sm:text-left text-md sm:text-xl mix-blend-hard-light">
-          We provide the best services:
-        </h2>
-        <div className="grid content-center justify-center grid-cols-2 gap-2 md:grid-cols-3 ">
-          {/* card starting - will invoke card from MyServicesItem and pass the data */}
-          <MyServicesItems servicesData={servicesData || []} />
-          {/* /card end */}
-        </div>
+    <section className="my-20 ">
+      <h2 className="p-4 pl-12 mt-5 font-mono font-semibold bg-white rounded w-80 sm:w-96 sm:text-left text-md sm:text-xl mix-blend-hard-light">
+        We provide the best services:
+      </h2>
+      <div className="grid content-center justify-center grid-cols-2 gap-2 md:grid-cols-3 xl:grid-cols-5 ">
+        {/* card starting - will invoke card from MyServicesItem and pass the data */}
+        <MyServicesItems servicesData={servicesData || []} />
+        {/* /card end */}
       </div>
     </section>
   );

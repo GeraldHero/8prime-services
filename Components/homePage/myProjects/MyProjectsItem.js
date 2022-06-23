@@ -23,7 +23,7 @@ export default function MyProjectsItem({ projectData }) {
           </div>
           <div className="w-full text-center">
             {" "}
-            <button className="p-3 text-white rounded-lg bg-tahiti hover:bg-secondary">
+            <button className="p-3 text-white rounded-lg shadow-lg shadow-tahiti/30 bg-tahiti hover:bg-secondary">
               MORE PHOTO
             </button>
           </div>

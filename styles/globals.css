@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html,
 body {
   padding: 0;
@@ -29,3 +29,14 @@ a {
     rgba(0, 0, 0, 1) 87%
   );
 }
+/* ++++++++++ back to back text box ++++++++++ */
+.bb-text-box {
+  @apply flex items-center justify-center  rounded h-36 p-5 bg-light md:bg-transparent lg:text-lg shadow-md md:shadow-transparent md:border-none border-t border-primary;
+}
+/* ++++++++++ /back to back text box ++++++++++ */
+
+/* ++++++++++ Subscribe section ++++++++++ */
+.my-subscribe-btn {
+  @apply flex-shrink-0 px-3 py-2 text-lg text-white rounded shadow-xl bg-green shadow-green/30 hover:bg-lightGreen;
+}
+/* ++++++++++ /Subscribe section ++++++++++ */
