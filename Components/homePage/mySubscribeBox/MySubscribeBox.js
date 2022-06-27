@@ -9,15 +9,15 @@ export default function MySubscribeBox() {
               8<span className="font-mono text-primary">Prime</span>
             </span>
           </h1>
-          <p className="text-sm sm:text-xl ">
+          <p className="text-xs sm:text-sm sm:text-xl ">
             Get the latest posts delivered right to your inbox
           </p>
         </div>
         <div>
           <form className="w-full max-w-sm m-auto">
-            <div className="flex items-center py-2 ">
+            <div className="flex items-center justify-center gap-3 py-2 ">
               <input
-                className="w-full p-2 mr-3 text-lg rounded text-dark focus:outline-none"
+                className="p-2 rounded sm:w-full sm:text-lg text-dark focus:outline-none"
                 type="email"
                 placeholder="Email"
               />

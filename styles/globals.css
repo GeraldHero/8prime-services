@@ -40,3 +40,10 @@ a {
   @apply flex-shrink-0 px-3 py-2 text-lg text-white rounded shadow-xl bg-green shadow-green/30 hover:bg-lightGreen;
 }
 /* ++++++++++ /Subscribe section ++++++++++ */
+
+/* Footer */
+
+.my-h2-title {
+  @apply py-2 text-gray-400 text-base sm:text-lg;
+}
+/* /Footer */
