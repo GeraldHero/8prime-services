@@ -1,33 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     fontFamily: {
       roboto: "'Roboto', sans-serif",
     },
     colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      white: "#ffffff",
-      primary: "#C9CFCF",
-      secondary: "#5B95AA",
-      background: "#7A8187",
-      light: "#F0F4FC",
-      dark: "#333652",
-      tahiti: "#3ab7bf",
-      logo: "#9C9290",
-      yellow: "#FAD02C",
-      green: "#009688",
-      lightGreen: "#285e61",
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      primary: '#C9CFCF',
+      secondary: '#5B95AA',
+      background: '#7A8187',
+      light: '#F0F4FC',
+      dark: '#333652',
+      tahiti: '#3ab7bf',
+      logo: '#9C9290',
+      yellow: '#FAD02C',
+      green: '#76B947',
+      lightGreen: '#B1D8B7',
+      darkGreen: '#2F5233',
       rose: colors.rose,
       gray: colors.gray,
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
