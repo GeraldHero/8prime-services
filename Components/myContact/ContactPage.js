@@ -2,7 +2,7 @@ export default function ContactPage() {
   return (
     <section
       id='contactSection'
-      className='w-full p-3 py-10 space-y-4 text-center bg-gray-200 md:space-y-5 sm:p-10 md:h-screen align-center'
+      className='w-full p-3  my-24 space-y-4 text-center md:space-y-12 sm:p-10  '
     >
       <h1 className='text-2xl font-bold md:text-3xl'>Contact Us</h1>
       <p className=' md:text-xl'>

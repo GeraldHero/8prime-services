@@ -80,18 +80,18 @@ export default function MySlider() {
         <div
           ref={slideRef}
           id={testimonialsData[currentIndex].name}
-          className='font-robot aspect-w-16 aspect-h-9'
+          className='font-roboto'
         >
-          <div className='flex flex-col w-10/12  h-80 justify-center items-center content-center  pt-5 text-center mx-auto'>
-            <p className='text-base md:text-xl'>
-              <span className='text-lg md:text-5xl font-bold'>"</span>
+          <div className='flex flex-col w-8/12 md:w-10/12  h-80 justify-center items-center content-center  pt-5 text-center mx-auto'>
+            <p className='text-sm md:text-xl'>
+              <span className='text-sm md:text-5xl font-bold'>"</span>
               {testimonialsData[currentIndex].comment}
               <span className='font-bold'>"</span>
             </p>
             <div className='flex mt-5 md:mt-8 mb-2 rounded-full justify-center items-center text-lg md:text-2xl shadow w-12 h-12 md:w-16 md:h-16 bg-dark text-light'>
               {testimonialsData[currentIndex].image}
             </div>
-            <h1 className='text-base md:text-lg font-bold text-gray-700'>
+            <h1 className='text-sm md:text-lg font-bold text-gray-700'>
               {testimonialsData[currentIndex].name}
             </h1>
             <p className='text-sm text-gray-500'>
@@ -106,14 +106,14 @@ export default function MySlider() {
             onClick={handlePrevClick}
             id='prevButton'
           >
-            <i className='fa-solid fa-angle-left   fa-2xl'></i>
+            <i className='fa-solid fa-angle-left   md:fa-2xl'></i>
           </button>
           <button
             className=' rounded p-3 hover:bg-dark hover:text-light '
             onClick={handleNextClick}
             id='nextButton'
           >
-            <i className='fa-solid fa-angle-right  fa-2xl'></i>
+            <i className='fa-solid fa-angle-right  md:fa-2xl'></i>
           </button>
         </div>
       </div>

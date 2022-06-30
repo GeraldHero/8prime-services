@@ -22,7 +22,7 @@ export default function MySubscribeBox() {
                 placeholder='Email'
               />
               <button className='my-btn' type='button'>
-                Sign Up
+                <i className='fa-solid fa-envelope'></i> Sign Up
               </button>
             </div>
           </form>

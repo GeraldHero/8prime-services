@@ -31,25 +31,7 @@ a {
 }
 
 .my-btn {
-  @apply flex-shrink-0 uppercase px-3 py-2 text-base text-dark font-bold rounded shadow-xl shadow-dark/30 hover:text-light;
-
-  background: rgb(84, 241, 108);
-  background: linear-gradient(
-    90deg,
-    rgba(84, 241, 108, 1) 0%,
-    rgba(56, 255, 0, 1) 46%,
-    rgba(29, 200, 2, 1) 100%
-  );
-}
-
-.my-btn:hover {
-  background: rgb(0, 171, 26);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 171, 26, 1) 0%,
-    rgba(41, 187, 0, 1) 46%,
-    rgba(18, 131, 0, 1) 100%
-  );
+  @apply flex-shrink-0 uppercase px-3 py-2 text-base text-dark font-bold rounded shadow-md shadow-dark/30 text-light bg-green-600 hover:bg-green-700;
 }
 
 /* ++++++++++ /Base  ++++++++++ */

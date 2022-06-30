@@ -1,60 +1,55 @@
+// const myLoader = ({ src, width, quality }) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+// };
+
 export default function MyAbout() {
   return (
     <section id='aboutPage'>
-      <div className='grid items-center grid-cols-1 gap-5 m-10 lg:grid-cols-2 font-roboto'>
-        <div className='shadow-lg'>
-          <img className='rounded ' src='/images/about-img-2.jpg' alt='about' />
+      <div className='grid items-center grid-cols-1 gap-5 m-10 my-24 lg:grid-cols-2 font-mono'>
+        <div className=' flex justify-center   '>
+          <img
+            src='/images/about-img-2.jpg'
+            alt='Picture of the author'
+            className='rounded lg:h-[500px] shadow-lg'
+          />
         </div>
-        <div className='p-5 space-y-5'>
-          <h1 className='text-xl font-bold md:text-3xl'>ABOUT US</h1>
+        <div className='p-5 space-y-5 text-lg lg:text-xl mx-auto  md:w-10/12'>
           <p className='indent-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            quisquam at voluptas ut corporis inventore ab ipsa quis omnis
-            ratione aliquid adipisci in, ipsum sit autem sunt molestias quasi?
-            Architecto.
+            Our multi-disciplined engineering team understands the complex
+            manufacturing and industrial problems our clients face. Our
+            engineering services are built on years of experience and the
+            expertise to identify and design the unique industrial engineering
+            solutions that match our client's needs.
           </p>
           <p className='indent-8'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            aperiam sunt repudiandae labore cumque ea expedita tempora harum,
-            corrupti dolorum distinctio quae ab iste vel ut nemo dolore
-            provident accusamus error nisi adipisci iure inventore eum? Odio
-            modi necessitatibus enim, aliquid voluptatem obcaecati harum
-            repudiandae. Eveniet ab impedit provident consequuntur hic illo
-            vitae voluptatum quos et neque. Tempore laboriosam ab voluptatum
-            illum voluptas eveniet qui voluptatem consectetur vero magni,
-            doloribus ad enim error laudantium cum provident quas deleniti
-            magnam voluptate culpa at fugit. Aliquid suscipit, laborum
-            consequatur, aut amet veniam veritatis odit sit repellat
-            necessitatibus, voluptatum obcaecati in? Non, labore. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Beatae sit
-            necessitatibus consectetur rerum vitae aperiam quae ut quod id
-            mollitia.
+            We possess state of the art technology and utilize these tools on a
+            daily basis to solve our clients most difficult challenges. Some of
+            our engineering services include paint & process coatings
+            strategies, electrical engineering solutions, conveyance system
+            solutions, equipment and tooling, and facility layout and design.
           </p>
-          <button className='my-subscribe-btn'>CONTACT US</button>
+          <p className='indent-8'>
+            8prime stands out as a leader amongst industrial engineering
+            companies. Contact us today to find out the most effective way to
+            incorporate lean principles into your operations for maximum
+            efficiency.
+          </p>
         </div>
       </div>
 
-      <div className='grid justify-center w-8/12 grid-cols-1 gap-8 mx-auto my-12 text-left font-roboto align-center'>
+      <div className='grid justify-center w-7/12 grid-cols-1 gap-12 mx-auto my-12 text-left font-roboto align-center'>
         <h1 className='text-3xl font-bold text-center'>
           8Prime Construction and Engineeing Services
         </h1>
         <p className='indent-8'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          numquam exercitationem iste ipsam debitis ab aliquid libero sunt
-          voluptatem vero. Sequi alias aut veritatis error, delectus enim
-          explicabo repellendus ducimus! Lorem ipsum dolor sit amet consectetur
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-          inventore magnam architecto consequatur praesentium deleniti nam optio
-          pariatur debitis? Porro eos cumque consequatur facilis voluptatum ab
-          aperiam assumenda voluptates veritatis?
+          8Prime is an expert structural engineering firm and our engineers,
+          structural engineering consultants, and expert project managers
+          understand how to support the equipment in current or future
+          facilities. We can design or analyze the support systems needed for
+          existing or future mezzanines, equipment, conveyors, and platforms &
+          more.
         </p>
-        <p className='indent-8'>
-          adipisicing elit. Facilis quasi unde praesentium. Magnam, consequuntur
-          nisi, officia rerum praesentium assumenda impedit ratione quod
-          blanditiis quasi minus nulla saepe quisquam veniam deleniti, possimus
-          laudantium sapiente sunt. Quasi ut ab fugit totam? Expedita harum ipsa
-          fugiat quisquam doloribus illo et earum ab quod.
-        </p>
+        <p className='indent-8'></p>
         <div className='text-lg font-bold text-right'>
           <p>
             <i className='fa-solid fa-phone'></i> (+63) 927 084 4077

@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "eightprime-construction-services",
+
+    "public": "out"
+  }
+}

@@ -40,7 +40,7 @@ const myNavbar = () => {
           </div>
           <div className='flex items-center justify-end sm:hidden '>
             <span
-              className='p-2 text-3xl rounded cursor-pointer text-light hover:bg-light hover:text-background'
+              className='p-2 text-3xl rounded cursor-pointer text-light sm:focus:bg-light sm:hover:text-background'
               onClick={menuToggle}
             >
               {OnClose ? (
@@ -79,13 +79,16 @@ const myNavbar = () => {
 
           <div className='grid items-center justify-end grid-cols-1 sm:flex'>
             <ul
-              className={`absolute z-40 rounded w-[97%] py-6 font-serif text-center  left-[1.5%] sm:left-auto duration-500 ease-in sm:py-0 sm:w-auto top-24 sm:top-auto bg-gradient-to-r from-[#000000] via-[#242330] to-[#000000] sm:from-transparent sm:mr-10 sm:space-x-5 sm:flex text-light ${
-                !OnClose ? 'opacity-0 sm:opacity-100' : 'opacity-100'
+              className={`absolute z-40 rounded w-[97%] py-6 font-serif text-center  left-[1.5%] sm:left-auto duration-300 ease-in-out sm:py-0 sm:w-auto top-24 sm:top-auto bg-gradient-to-r from-[#000000] via-[#242330] to-[#000000] sm:from-transparent sm:mr-10 sm:space-x-5 sm:flex text-light ${
+                !OnClose
+                  ? 'opacity-0 sm:opacity-100 top-[-500px]'
+                  : 'opacity-100 top-24'
               }`}
             >
               {PageLink.map((pages, idx) => {
                 return (
                   <li
+                    onClick={menuToggle}
                     key={idx}
                     className='py-1 text-lg font-medium tracking-wide sm:py-0'
                   >
