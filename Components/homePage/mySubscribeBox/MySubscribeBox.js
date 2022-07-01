@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export default function MySubscribeBox() {
   return (
     <section id='mySubscibeBox' className=' my-background-gradient'>
@@ -21,8 +23,12 @@ export default function MySubscribeBox() {
                 type='email'
                 placeholder='Email'
               />
-              <button className='my-btn' type='button'>
-                <i className='fa-solid fa-envelope'></i> Sign Up
+              <button className='my-btn flex items-center gap-1' type='button'>
+                <FontAwesomeIcon
+                  icon='fa-solid fa-envelope'
+                  className='w-4 h-4'
+                />
+                <p>Sign Up</p>
               </button>
             </div>
           </form>

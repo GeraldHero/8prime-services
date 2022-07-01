@@ -1,8 +1,9 @@
+import Image from 'next/image';
 export default function ContactPage() {
   return (
     <section
       id='contactSection'
-      className='w-full p-3  my-24 space-y-4 text-center md:space-y-12 sm:p-10  '
+      className='w-full p-3 my-4 md:my-14  space-y-4 text-center md:space-y-8   '
     >
       <h1 className='text-2xl font-bold md:text-3xl'>Contact Us</h1>
       <p className=' md:text-xl'>
@@ -10,14 +11,16 @@ export default function ContactPage() {
       </p>
 
       <div className='grid justify-center grid-cols-1 md:grid-cols-2 justify-items-center texts-center align-center'>
-        <img
-          className='md:h-[30vw] shadow-lg rounded-md'
+        <Image
+          className='shadow-lg rounded-md'
           src='/images/contact-img-1.jpg'
           alt='contactImage'
+          width={500}
+          height={400}
         />
         <form className='w-full space-y-1 text-left p-5 sm:p-0  md:w-5/6'>
           <label
-            for='firstName
+            htmlFor='firstName
             '
             className='block mb-2 text-gray-900 dark:text-gray-400'
           >
@@ -29,7 +32,7 @@ export default function ContactPage() {
             type='text'
           />
           <label
-            for='email'
+            htmlFor='email'
             className='block mb-2 text-gray-900 dark:text-gray-400'
           >
             Email
@@ -41,7 +44,7 @@ export default function ContactPage() {
             type='email'
           />
           <label
-            for='country'
+            htmlFor='country'
             className='block mb-2 text-gray-900 dark:text-gray-400'
           >
             Country
@@ -58,7 +61,7 @@ export default function ContactPage() {
             <option>Japan</option>
           </select>
           <label
-            for='message'
+            htmlFor='message'
             className='block mb-2 text-gray-900 dark:text-gray-400'
           >
             Your message

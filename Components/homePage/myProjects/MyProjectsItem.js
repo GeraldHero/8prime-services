@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function MyProjectsItem({ projectData }) {
   return projectData.map((data, idx) => {
     return (
@@ -6,7 +7,13 @@ export default function MyProjectsItem({ projectData }) {
         key={idx}
       >
         <div className='flex w-full shadow-lg'>
-          <img className='rounded ' src={data.image} alt='project1' />
+          <Image
+            className='rounded '
+            src={data.image}
+            alt='project1'
+            width={600}
+            height={400}
+          />
         </div>
         <div className='p-3 font-serif sm:p-10'>
           <h1 className='text-xl font-semibold tracking-wide md:text-3xl '>
@@ -26,7 +33,6 @@ export default function MyProjectsItem({ projectData }) {
             <button className='my-btn'>more info</button>
           </div>
         </div>
-        ;
       </div>
     );
   });

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const MyBackToBack = () => {
   return (
     <section className='my-16'>
@@ -13,7 +14,9 @@ const MyBackToBack = () => {
         </div>
         <div className='order-1 md:order-2'>
           <div>
-            <img
+            <Image
+              width={600}
+              height={500}
               className='shadow-md rounded-t-xl md:rounded-bl-full'
               src='/images/bb-img-1.jpg'
               alt='bb1'
@@ -21,7 +24,9 @@ const MyBackToBack = () => {
           </div>
         </div>
         <div className='order-3'>
-          <img
+          <Image
+            width={600}
+            height={500}
             className='shadow-md rounded-t-xl md:rounded-r-full'
             src='/images/bb-img-2.jpeg'
             alt='bb2'
@@ -42,7 +47,9 @@ const MyBackToBack = () => {
           </h2>
         </div>
         <div className='order-5 rounded-t-xl md:order-6 '>
-          <img
+          <Image
+            width={600}
+            height={500}
             className='shadow-md md:rounded-tl-full'
             src='/images/bb-img-3.jpeg'
             alt='bb3'

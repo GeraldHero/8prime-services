@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-const myNavbar = () => {
+const MyNavbar = () => {
   const [OnClose, setOnClose] = useState(false);
 
   const menuToggle = (i) => {
@@ -108,4 +108,4 @@ const myNavbar = () => {
   );
 };
 
-export default myNavbar;
+export default MyNavbar;

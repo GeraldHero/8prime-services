@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const mainIconLink = [
   {
@@ -61,19 +61,27 @@ const helpCenterData = [
 export default function MyFooter() {
   return (
     <footer className='text-center lg:text-left my-background-gradient text-light '>
-      <div className='flex items-center justify-center p-6 border-b lg:justify-between border-light'>
+      <div className='flex items-center align-center justify-center p-6 border-b lg:justify-between border-light'>
         <div className='hidden mr-12 lg:block'>
           <span className=' font-roboto'>
             Get connected with us on social networks:
           </span>
         </div>
-        <div className='flex justify-center '>
+        <div className='flex justify-center items-center '>
           {mainIconLink.map((data, idx) => {
             return (
               <div key={idx}>
                 <Link href={data.link}>
-                  <a target='_blank' className='mr-6 text-light'>
-                    <i className={`hover:text-tahiti fa-lg ${data.icon}`}></i>
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    className='flex  text-light'
+                    aria-label={`Link-${idx}`}
+                  >
+                    <FontAwesomeIcon
+                      icon={data.icon}
+                      className={`w-5 h-5 hover:text-tahiti mx-3`}
+                    />
                   </a>
                 </Link>
               </div>
@@ -109,6 +117,7 @@ export default function MyFooter() {
             <li>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='hover:text-tahiti'
                 href='https://www.facebook.com/8Prime.Construction'
               >
@@ -137,7 +146,7 @@ export default function MyFooter() {
                   key={idx}
                   className='flex items-center justify-center gap-2 text-sm sm:text-lg'
                 >
-                  <i className={data.icon}></i>
+                  <FontAwesomeIcon icon={data.icon} className='w-4 h-4' />
                   {data.contact}
                 </li>
               );

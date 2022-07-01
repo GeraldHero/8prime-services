@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 let count = 0;
 // const images = [
@@ -58,14 +59,13 @@ export default function MySlider() {
 
   useEffect(() => {
     slideRef.current.addEventListener('animationend', removeAnimation);
+    const startSlider = () => {
+      setInterval(() => {
+        handleNextClick();
+      }, 3000);
+    };
     startSlider();
   }, []);
-
-  const startSlider = () => {
-    setInterval(() => {
-      handleNextClick();
-    }, 3000);
-  };
 
   // <img
   //           className='w-full h-[500px]'
@@ -84,9 +84,9 @@ export default function MySlider() {
         >
           <div className='flex flex-col w-8/12 md:w-10/12  h-80 justify-center items-center content-center  pt-5 text-center mx-auto'>
             <p className='text-sm md:text-xl'>
-              <span className='text-sm md:text-5xl font-bold'>"</span>
+              <span className='text-sm md:text-5xl font-bold'>&#8220;</span>
               {testimonialsData[currentIndex].comment}
-              <span className='font-bold'>"</span>
+              <span className='font-bold'>&#8221;</span>
             </p>
             <div className='flex mt-5 md:mt-8 mb-2 rounded-full justify-center items-center text-lg md:text-2xl shadow w-12 h-12 md:w-16 md:h-16 bg-dark text-light'>
               {testimonialsData[currentIndex].image}
@@ -105,15 +105,23 @@ export default function MySlider() {
             className='  rounded p-3 hover:bg-dark hover:text-light '
             onClick={handlePrevClick}
             id='prevButton'
+            aria-label='previous button'
           >
-            <i className='fa-solid fa-angle-left   md:fa-2xl'></i>
+            <FontAwesomeIcon
+              icon='fa-solid fa-angle-left'
+              className='w-3 h-3 md:w-5 md:h-5'
+            />
           </button>
           <button
             className=' rounded p-3 hover:bg-dark hover:text-light '
             onClick={handleNextClick}
             id='nextButton'
+            aria-label='next button'
           >
-            <i className='fa-solid fa-angle-right  md:fa-2xl'></i>
+            <FontAwesomeIcon
+              icon='fa-solid fa-angle-right'
+              className='w-3 h-3 md:w-5 md:h-5'
+            />
           </button>
         </div>
       </div>

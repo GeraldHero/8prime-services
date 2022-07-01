@@ -9,20 +9,14 @@ const Meta = ({ title, keywords, description }) => {
       <meta charSet='utf-8' />
       <link rel='icon' href='/favicon.ico' />
       <title>{title}</title>
-      <link
-        rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
-        integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
-        crossorigin='anonymous'
-        referrerpolicy='no-referrer'
-      />
     </Head>
   );
 };
 
 Meta.defaultProps = {
   title: '8Prime Services',
-  keywords: 'Engineering, Structure, Real Estate',
+  keywords:
+    'Engineering, Structure, Real Estate, eightprime-construction-services',
   description: 'Get the latest design and quality build from Danny Hug',
 };
 
