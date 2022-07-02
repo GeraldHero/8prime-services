@@ -17,7 +17,7 @@ const MyBackToBack = () => {
             <Image
               width={600}
               height={500}
-              className='shadow-md rounded-t-xl md:rounded-bl-full'
+              className='shadow-md rounded-t-xl md:rounded-bl-[16rem]'
               src='/images/bb-img-1.jpg'
               alt='bb1'
             />
@@ -27,7 +27,7 @@ const MyBackToBack = () => {
           <Image
             width={600}
             height={500}
-            className='shadow-md rounded-t-xl md:rounded-r-full'
+            className='shadow-md rounded-t-xl md:rounded-r-[12rem]'
             src='/images/bb-img-2.jpeg'
             alt='bb2'
           />
@@ -50,7 +50,7 @@ const MyBackToBack = () => {
           <Image
             width={600}
             height={500}
-            className='shadow-md md:rounded-tl-full'
+            className='shadow-md md:rounded-tl-[16rem]'
             src='/images/bb-img-3.jpeg'
             alt='bb3'
           />
