@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import "../styles/globals.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faPenRuler,
   faHouseChimneyWindow,
@@ -10,7 +10,10 @@ import {
   faEnvelope,
   faAngleRight,
   faAngleLeft,
-} from '@fortawesome/free-solid-svg-icons';
+  faBed,
+  faBath,
+  faArrowsLeftRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import {
   faFacebookF,
@@ -18,10 +21,11 @@ import {
   faInstagram,
   faGithub,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
   faPenRuler,
+  faBed,
   faHouseChimneyWindow,
   faFaucet,
   faHandHoldingDroplet,
@@ -29,11 +33,13 @@ library.add(
   faPhone,
   faEnvelope,
   faAngleRight,
-  faAngleLeft
+  faAngleLeft,
+  faBath,
+  faArrowsLeftRight
 );
 library.add(faFacebookF, faGoogle, faInstagram, faGithub, faTwitter);
 
-import Layout from '../Components/Layouts';
+import Layout from "../Components/Layouts";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
