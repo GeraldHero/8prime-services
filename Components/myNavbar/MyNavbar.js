@@ -3,10 +3,6 @@ import Link from 'next/link';
 const MyNavbar = () => {
   const [OnClose, setOnClose] = useState(false);
 
-  const menuToggle = (i) => {
-    !OnClose ? setOnClose(true) : setOnClose(false);
-  };
-
   const PageLink = [
     {
       pageName: 'Home',
@@ -41,7 +37,7 @@ const MyNavbar = () => {
           <div className='flex items-center justify-end sm:hidden '>
             <span
               className='p-2 text-3xl rounded cursor-pointer text-light sm:focus:bg-light sm:hover:text-background'
-              onClick={menuToggle}
+              onClick={() => setOnClose(!OnClose)}
             >
               {OnClose ? (
                 <svg
@@ -88,7 +84,7 @@ const MyNavbar = () => {
               {PageLink.map((pages, idx) => {
                 return (
                   <li
-                    onClick={menuToggle}
+                    onClick={() => setOnClose(!OnClose)}
                     key={idx}
                     className='py-1 text-lg font-medium tracking-wide sm:py-0'
                   >

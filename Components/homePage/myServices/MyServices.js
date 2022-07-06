@@ -1,4 +1,7 @@
 import MyServicesItems from './MyServicesItems';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const newServicesData = [
   {
@@ -35,16 +38,34 @@ const newServicesData = [
 ];
 
 export default function MyServices() {
+  const { ref, inView } = useInView({ threshold: 0.5 });
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+        when: 'beforeChildren',
+      },
+    },
+  };
+
   return (
-    <section className='my-20 '>
+    <section ref={ref} className='my-20 '>
       <h2 className='p-4 pl-12 mt-5 font-mono font-semibold   rounded w-80 sm:w-96 sm:text-left text-md sm:text-xl mix-blend-hard-light'>
         We provide the best services:
       </h2>
-      <div className='grid grid-cols-1 gap-2 justify-items-center align-center sm:grid-cols-2 md:grid-cols-3 3xl:grid-cols-5 '>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        animate='show'
+        className='grid grid-cols-1 gap-2 justify-items-center align-center sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-5 '
+      >
         {/* card starting - will invoke card from MyServicesItem and pass the data */}
         <MyServicesItems servicesData={newServicesData || []} />
         {/* /card end */}
-      </div>
+      </motion.div>
     </section>
   );
 }

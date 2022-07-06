@@ -1,11 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 
 export default function MyServicesItems({ servicesData }) {
+  const listItem = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   return servicesData.map((service, idx) => {
     return (
-      <section
+      <motion.section
         key={idx}
-        className='max-w-md p-8 m-5 text-center bg-white rounded-md shadow-md '
+        variants={listItem}
+        whileHover={{ scale: 1.2 }}
+        className='max-w-md p-8 m-12 text-center bg-white rounded-md shadow-md '
       >
         <div
           className={`flex items-center justify-center w-20 h-20 p-5 m-auto text-center rounded-full sm:w-24 sm:h-24 fa-2xl text-light ${service.iconBgColor}`}
@@ -18,7 +25,7 @@ export default function MyServicesItems({ servicesData }) {
         <p className='text-sm sm:text-base  text-gray-800'>
           {service.description}
         </p>
-      </section>
+      </motion.section>
     );
   });
 }
