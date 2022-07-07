@@ -27,12 +27,12 @@ export default function Home() {
       animate='visible'
     >
       <MyBanner />
+      <MyProjects />
       <MyServices />
       <MyBackToBack />
 
       <MySubscribeBox />
       <MySlider />
-      <MyProjects />
     </motion.main>
   );
 }

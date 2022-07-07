@@ -38,34 +38,56 @@ const newServicesData = [
 ];
 
 export default function MyServices() {
-  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { ref: serviceRef, inView } = useInView();
 
   const container = {
     hidden: { opacity: 0 },
     show: {
-      opacity: 1,
+      opacity: [0.1, 1],
       transition: {
-        staggerChildren: 0.5,
-        when: 'beforeChildren',
+        delay: 0.2,
+        duration: 0.75,
+        type: 'spring',
+        bounce: 0.2,
+        staggerChildren: 0.3,
       },
     },
   };
 
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start('show');
+    }
+    if (!inView) {
+      animation.start('hidden');
+    }
+  }, [inView]);
+
   return (
-    <section ref={ref} className='my-20 '>
+    <section ref={serviceRef} className='my-20 w-full '>
       <h2 className='p-4 pl-12 mt-5 font-mono font-semibold   rounded w-80 sm:w-96 sm:text-left text-md sm:text-xl mix-blend-hard-light'>
         We provide the best services:
       </h2>
       <motion.div
         variants={container}
         initial='hidden'
-        animate='show'
-        className='grid grid-cols-1 gap-2 justify-items-center align-center sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-5 '
+        animate={animation}
+        className='grid grid-cols-1 gap-2 justify-items-center align-center sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-5'
       >
         {/* card starting - will invoke card from MyServicesItem and pass the data */}
         <MyServicesItems servicesData={newServicesData || []} />
         {/* /card end */}
       </motion.div>
+      <div className='relative flex py-5 items-center'>
+        <div className='flex-grow border-t border-gray-400'></div>
+        <span className='flex-shrink mx-4 text-gray-400'>
+          <h2 className='text-2xl font-bold tracking-widest text-tahiti'>
+            8<span className='font-mono text-primary'>Prime</span>
+          </h2>
+        </span>
+        <div className='flex-grow border-t border-gray-400'></div>
+      </div>
     </section>
   );
 }

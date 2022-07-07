@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function MyServicesItems({ servicesData }) {
   const listItem = {
     hidden: { opacity: 0 },
-    show: { opacity: 1 },
+    show: { opacity: [0.1, 1] },
   };
   return servicesData.map((service, idx) => {
     return (

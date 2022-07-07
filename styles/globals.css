@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html,
 body {
   padding: 0;
@@ -76,7 +76,7 @@ a {
 
 /* ++++++++++ back to back text box ++++++++++ */
 .bb-text-box {
-  @apply flex items-center justify-center  rounded h-36 p-5 bg-light md:bg-transparent lg:text-lg shadow-md md:shadow-transparent md:border-none border-t border-primary;
+  @apply flex items-center justify-center  rounded h-36 p-5 bg-gray-200 md:bg-transparent  lg:text-lg shadow-md md:shadow-transparent md:border-none   border-primary;
 }
 /* ++++++++++ /back to back text box ++++++++++ */
 
