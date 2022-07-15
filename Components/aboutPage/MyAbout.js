@@ -53,7 +53,7 @@ export default function MyAbout() {
         </div>
       </div>
 
-      <div className='grid justify-center text-lg lg:text-xl  font-mono w-10/12 md:w-7/12 grid-cols-1 gap-12 mx-auto my-12 text-left font-roboto align-center'>
+      <div className='flex flex-col justify-center align-center text-lg lg:text-xl  font-mono w-10/12 md:w-7/12 bg-gray-200 gap-12  shadow-lg   rounded mx-auto my-16 text-left font-roboto align-center p-14 md:p-24'>
         <h1 className='text-2xl md:text-3xl font-bold text-center'>
           8Prime Construction and Engineeing Services
         </h1>

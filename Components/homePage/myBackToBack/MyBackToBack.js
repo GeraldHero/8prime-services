@@ -21,22 +21,53 @@ const MyBackToBack = () => {
   };
 
   const childContainer = {
-    hidden: { opacity: 0 },
+    hidden: { x: 100, opacity: 0 },
     show: {
+      x: 0,
       opacity: 1,
       transition: {
+        type: 'spring',
+        stiffness: 100,
         duration: 1,
         delay: 0.5,
       },
     },
   };
 
-  const imageContainer = {
-    hidden: { scale: 0 },
+  const childContainer2 = {
+    hidden: { x: -100, opacity: 0 },
     show: {
-      scale: 1,
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 100,
+        duration: 1,
+        delay: 0.5,
+      },
+    },
+  };
+
+  const imageContainerRight = {
+    hidden: { opacity: 0, x: '100vw' },
+    show: {
+      x: 0,
+      opacity: 1,
       transition: {
         duration: 0.7,
+        stiffness: 100,
+      },
+    },
+  };
+
+  const imageContainerLeft = {
+    hidden: { opacity: 0, x: '-100vw' },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.9,
+        stiffness: 100,
       },
     },
   };
@@ -49,7 +80,14 @@ const MyBackToBack = () => {
     firstInView ? animation.start('show') : animation.start('hidden');
     secondInView ? animation2.start('show') : animation2.start('hidden');
     thirdInView ? animation3.start('show') : animation3.start('hidden');
-  }, [firstInView, secondInView, thirdInView]);
+  }, [
+    firstInView,
+    secondInView,
+    thirdInView,
+    animation,
+    animation2,
+    animation3,
+  ]);
 
   return (
     <motion.section className='my-16'>
@@ -78,7 +116,7 @@ const MyBackToBack = () => {
         </motion.div>
         <div className='order-1 md:order-2'>
           <motion.div
-            variants={imageContainer}
+            variants={imageContainerRight}
             initial='hidden'
             animate={animation}
           >
@@ -94,7 +132,7 @@ const MyBackToBack = () => {
 
         <div className='order-3'>
           <motion.div
-            variants={imageContainer}
+            variants={imageContainerLeft}
             initial='hidden'
             animate={animation2}
           >
@@ -118,9 +156,15 @@ const MyBackToBack = () => {
             initial='hidden'
             className='font-bold md:text-left mb-5'
           >
-            <p className='font-sans text-lg sm:text-xl lg:text-3xl text-dark'>
+            <motion.p
+              variants={childContainer2}
+              animate={animation2}
+              initial='hidden'
+              className='font-sans text-lg sm:text-xl lg:text-3xl text-dark'
+            >
               Your <span className='text-tahiti'>LIFE</span> is our priority.
-            </p>
+            </motion.p>
+            We're not just building a house, We're building homes.
           </motion.h2>
         </div>
         <div
@@ -133,14 +177,20 @@ const MyBackToBack = () => {
             animate={animation3}
             className='font-bold md:text-right '
           >
-            <p className='font-sans text-lg sm:text-xl lg:text-3xl text-dark'>
-              <span className='text-tahiti'>QUALITY</span> is a must.
-            </p>
+            Our profession, business and career is on the line.
+            <motion.p
+              variants={childContainer}
+              animate={animation3}
+              initial='hidden'
+              className='font-sans text-lg sm:text-xl lg:text-3xl text-dark'
+            >
+              We put <span className='text-tahiti'>QUALITY</span> first.
+            </motion.p>
           </motion.h2>
         </div>
         <div className='order-5 rounded-t-xl md:order-6 '>
           <motion.div
-            variants={imageContainer}
+            variants={imageContainerRight}
             initial='hidden'
             animate={animation3}
           >

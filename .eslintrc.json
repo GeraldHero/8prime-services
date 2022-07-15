@@ -1,6 +1,7 @@
 {
   "extends": ["next", "next/core-web-vitals", "next/babel"],
   "settings": {
+    "import/resolver": "webpack",
     "next": {
       "rootDir": "packages/my-app/"
     }

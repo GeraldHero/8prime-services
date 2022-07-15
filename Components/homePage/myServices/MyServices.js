@@ -62,7 +62,7 @@ export default function MyServices() {
     if (!inView) {
       animation.start('hidden');
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <section ref={serviceRef} className='my-20 w-full '>

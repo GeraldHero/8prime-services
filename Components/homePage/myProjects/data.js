@@ -1,4 +1,4 @@
-const projectData = [
+const ProjectsData = [
   {
     id: 1,
     image: '/images/sample-design-1.jpg',
@@ -49,4 +49,4 @@ const projectData = [
     price: '4,000,000.00',
   },
 ];
-export default projectData;
+export default ProjectsData;
