@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import MainBanner from '../Components/homePage/myMainBanner/MainBanner';
 import MyBackToBack from '../Components/homePage/myBackToBack/MyBackToBack';
 import MyBanner from '../Components/homePage/myBanner/MyBanner';
 import MyProjects from '../Components/homePage/myProjects/MyProjects';
@@ -26,11 +26,11 @@ export default function Home() {
       initial='hidden'
       animate='visible'
     >
-      <MyBanner />
+      <MainBanner />
       <MyProjects />
       <MyServices />
       <MyBackToBack />
-
+      <MyBanner />
       <MySubscribeBox />
       <MySlider />
     </motion.main>

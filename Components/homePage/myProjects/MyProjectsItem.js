@@ -10,12 +10,12 @@ export default function MyProjectsItem({ projectData }) {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: [1, 0.9, 1, 1.1, 1] }}
-          className='hover:cursor-pointer hover:shadow-xl rounded-tl-[6rem] m-6 p-5 '
+          className='hover:cursor-pointer shadow-md hover:shadow-xl rounded-tl-[6rem] m-3 p-2 '
         >
           <br />
           <div className='flex mx-auto sm:w-11/12'>
             <Image
-              className='rounded-xl shadow rounded-tl-[6rem] rounded-br-[6rem]'
+              className='rounded-xl shadow  rounded-tl-[4rem] md:rounded-br-[4rem]'
               src={data.image}
               alt='project1'
               width={900}

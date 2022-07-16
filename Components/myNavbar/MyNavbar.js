@@ -9,7 +9,7 @@ const MyNavbar = () => {
       link: '/',
     },
     {
-      pageName: 'About',
+      pageName: 'Company',
       link: '/about',
     },
     {
@@ -30,7 +30,7 @@ const MyNavbar = () => {
             <h2 className='text-2xl font-bold tracking-widest text-tahiti'>
               8<span className='font-mono text-primary'>Prime</span>
             </h2>
-            <p className='text-sm sm:text-lg text-background flex-nowrap '>
+            <p className='text-sm sm:text-xs md:text-lg text-background flex-nowrap '>
               Construction and Engineering Services
             </p>
           </div>

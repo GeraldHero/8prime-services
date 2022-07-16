@@ -93,6 +93,9 @@ const MyBackToBack = () => {
     <motion.section className='my-16'>
       <div className='flex grid items-center content-center justify-center grid-cols-1 md:gap-8 mb-10 font-sans text-sm text-center sm:my-10 md:grid-cols-2 p-3 md:p-0'>
         <motion.div
+          variants={container}
+          initial='hidden'
+          animate={animation}
           ref={firstRef}
           className='order-2 md:order-1   mb-5 md:mb-0 lg:justify-end bb-text-box'
         >
@@ -146,7 +149,10 @@ const MyBackToBack = () => {
           </motion.div>
         </div>
 
-        <div
+        <motion.div
+          variants={container}
+          initial='hidden'
+          animate={animation2}
           ref={secondRef}
           className='order-4 bb-text-box mb-5 md:mb-0 lg:justify-start'
         >
@@ -166,8 +172,11 @@ const MyBackToBack = () => {
             </motion.p>
             We're not just building a house, We're building homes.
           </motion.h2>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={container}
+          initial='hidden'
+          animate={animation3}
           ref={thirdRef}
           className='order-6 md:order-5 bb-text-box mb-5 md:mb-0 lg:justify-end '
         >
@@ -187,7 +196,7 @@ const MyBackToBack = () => {
               We put <span className='text-tahiti'>QUALITY</span> first.
             </motion.p>
           </motion.h2>
-        </div>
+        </motion.div>
         <div className='order-5 rounded-t-xl md:order-6 '>
           <motion.div
             variants={imageContainerRight}
