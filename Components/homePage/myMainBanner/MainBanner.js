@@ -23,16 +23,16 @@ export default function MainBanner() {
     <section className='relative grid sm:grid-cols-2 justify-center mb-32 md:mb-2 md:mt-8   items-center '>
       <div
         className='absolute sm:rounded-lg 
-        sm:shadow-none inset-x-0 shadow-xl bottom-[-30%] bg-white w-3/4    mx-auto  rounded-lg rounded-t-none sm:left-auto sm:bottom-auto  w-[350px] sm:w-auto z-20  sm:bg-transparent sm:relative p-8 lg:p-24 text-left'
+        sm:shadow-none inset-x-0 shadow-xl bottom-[-30%] bg-white w-3/4 mx-auto  rounded-lg rounded-t-none sm:left-auto sm:bottom-auto sm:w-auto z-20  sm:bg-transparent sm:relative p-8 lg:p-24 2xl:pl-48 text-left'
       >
         <motion.h1
           variants={mainText}
           initial='hidden'
           animate='show'
-          className='text-2xl   lg:text-5xl font-mono font-bold'
+          className='text-2xl lg:text-5xl font-mono font-bold'
         >
-          <span className='text-tahiti uppercase'>Build</span> Your Dream House
-          With Us.
+          <span className='text-tahiti uppercase'>Build</span> Your Dream
+          <br /> House With Us.
         </motion.h1>
         <motion.p
           variants={childText}
@@ -44,11 +44,11 @@ export default function MainBanner() {
           general construction, project management, estimating, and skilled
           craftsmenship to exceed expectations on every job. And, we do this in
           every industry we serve. Our sustainable construction practices make
-          Prime an easy to work with - and easy to trust - 8Prime Construction
+          8Prime an easy to work with - and easy to trust - 8Prime Construction
           and Engineering Services.
         </motion.p>
       </div>
-      <div className='z-10'>
+      <div className='z-10 flex justify-center'>
         <Image
           src='/images/main-banner-1.jpg'
           alt='eight prime banner '
