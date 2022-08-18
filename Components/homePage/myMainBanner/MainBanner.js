@@ -22,7 +22,7 @@ export default function MainBanner() {
   return (
     <section className='relative grid sm:grid-cols-2 justify-center mb-32 md:mb-2 md:mt-8   items-center '>
       <div
-        className='absolute sm:rounded-lg 
+        className='absolute sm:rounded-lg overflow-hidden
         sm:shadow-none inset-x-0 shadow-xl bottom-[-30%] bg-white w-3/4 mx-auto  rounded-lg rounded-t-none sm:left-auto sm:bottom-auto sm:w-auto z-20  sm:bg-transparent sm:relative p-8 lg:p-24 2xl:pl-48 text-left'
       >
         <motion.h1
@@ -38,7 +38,7 @@ export default function MainBanner() {
           variants={childText}
           initial='hidden'
           animate='show'
-          className=' text-xs lg:text-lg mt-4'
+          className=' text-xs  xl:text-lg mt-4'
         >
           With an unwavering focus on quality, 8Prime Construction provides
           general construction, project management, estimating, and skilled
